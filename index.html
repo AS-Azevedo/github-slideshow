@@ -1,13 +1,36 @@
----
-layout: presentation
----
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio CSS</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+    <div class="card">
+
+        <h1 id="name">Anderson Azevedo</h1>
+
+        <ul>
+
+            <a href="https://www.instagram.com/" class="link">
+                <li class="instagram"><img src="./image/Insta.png" alt="Instagram" width="30px">/AS.Azevedo</li>
+            </a>
+                
+            <a href="https://twitter.com/" class="link">
+                <li class="twitter"><img src="./image/Twitter.png" alt="Twitter" width="30px" id="black_instagram">/AS.Azevedo</li>
+            </a>
+
+            <a href="https://www.youtube.com/" class="link">
+                <li class="youtube"><img src="./image/Youtube.png" alt="YouTube" width="30px">/AS.Azevedo</li>
+            </a>
+
+        </ul>
+
+    </div>
+    
+</body>
+</html>
